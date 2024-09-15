@@ -28,11 +28,18 @@
            <li class='has-sub'><a href='#'><span>Category</span></a>
           
             <ul>
+           
+           
+           
+                @if (!empty($cat))
+                
+            
             @foreach($cat as $ct)             
              <li  class="{{ Request::is('/') ? "active" : "" }}"><a href=" {{Route('categorypost.show',$ct->id)}}"><span>{{ $ct->category }}</span></a>
                
              </li>
             @endforeach
+            @endif
             </ul>
             
     

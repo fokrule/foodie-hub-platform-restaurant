@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Mnu extends Model
 {
-    protected $table='mnu';
+    protected $table='menu';
 
     public function rest()
     {

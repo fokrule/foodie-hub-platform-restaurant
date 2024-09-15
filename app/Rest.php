@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Rest extends Model
 {
-    protected $table='rest';
+    protected $table='restaurant';
 
     public function menu()
     {
